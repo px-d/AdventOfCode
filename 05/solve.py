@@ -15,7 +15,6 @@ with open('05/input.txt') as f:
     lines = f.read().rstrip().splitlines()
 
     pyramid = []
-
     crates = {}
 
     for l in lines:

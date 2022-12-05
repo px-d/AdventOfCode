@@ -1,29 +1,13 @@
-def main():
-
+with open('01/input.txt') as f:
     elves_package = []
+    elve = []
+    for line in f.readlines():
+        if line.strip():
+            elve.append(line.strip())
+        else:
+            elves_package.append(elve)
+            elve = []
 
-    with open('01/input.txt') as f:
-        elve = []
-        for line in f.readlines():
-            if line.strip():
-                elve.append(line.strip())
-            else:
-                elves_package.append(elve)
-                elve = []
-
-        sums = [sum(map(int, p)) for p in elves_package]
-        largest = (0, 0)
-        for idx, amount in enumerate(sums):
-            if amount > largest[0]:
-                largest = amount, idx
-
-        print(f"Elve {largest[1]+1} has the largest package with {largest[0]}")
-        
-        # Part 2
-        # Total of the top 3 elves
-        sums.sort(reverse=True)
-        print(sum(list(sums[:3])))
-        
-        
-if __name__ == '__main__':
-    main()
+    sums = [sum(map(int, p)) for p in elves_package]
+    sums.sort()
+    print(f"Task A: {sums[-1]}, Task B: {sum(list(sums[-1:-4:-1]))}")
