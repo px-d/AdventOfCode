@@ -8,7 +8,7 @@ if __name__ == '__main__':
     
     common_chars = {}
     prio = 0
-    with open("03_12/input.txt") as f:
+    with open("03/input.txt") as f:
         input = f.read().splitlines()
         
         # Part 1

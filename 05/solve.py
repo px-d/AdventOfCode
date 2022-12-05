@@ -11,7 +11,7 @@ def move_crate_v2(amount, go, to, crates):
 
 version = "v2"
 
-with open('05_12/input.txt') as f:
+with open('05/input.txt') as f:
     lines = f.read().rstrip().splitlines()
 
     pyramid = []

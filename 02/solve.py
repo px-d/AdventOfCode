@@ -31,7 +31,7 @@ loose = {
     "C": "B",
 }
 
-with open("02_12/input.txt") as f:
+with open("02/input.txt") as f:
     rounds = f.read().splitlines()
     my_score = 0
     score = 0

@@ -2,7 +2,7 @@ def main():
 
     elves_package = []
 
-    with open('01_12/input.txt') as f:
+    with open('01/input.txt') as f:
         elve = []
         for line in f.readlines():
             if line.strip():

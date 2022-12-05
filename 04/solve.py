@@ -1,4 +1,4 @@
-with open('04_12/input.txt', 'r') as f:
+with open('04/input.txt', 'r') as f:
     lines = f.read().splitlines()
 
     fully_encased, partially_encased = 0, 0
